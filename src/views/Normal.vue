@@ -43,7 +43,7 @@
 	<div class="normal">
 		普通列表
 		<ul>
-			<li v-for="(item,index) in list">
+			<li v-for="(item,index) in list" :index="index">
 				<img :src="item.img" />
 				<div class="left_bottom" >
 					<p>{{item.name}}</p>

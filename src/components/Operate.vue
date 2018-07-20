@@ -35,10 +35,6 @@
 	}
 </style>
 <template>
-	<!--<div class="operate">-->
-	<!--优化列表
-		<ul>
-			<li v-for="(item,index) in list">-->
 	<li class="operate">
 		<img :src="item.img" />
 		<div class="left_bottom">
@@ -49,30 +45,23 @@
 			<span class="reduce btn" @click="reduce(index)">-</span>
 		</div>
 	</li>
-	<!--</ul>-->
-	<!--</div>-->
 </template>
 
 <script>
 	export default {
 		name: 'operate',
 		data() {
-			return {
-			}
+			return {}
 		},
-		props:["item","index"],
+		props: ["item", "index"],
 		methods: {
 			add(index) {
 				let t = this;
-				console.log(index, "+");
 				t.item.num++;
 			},
 			reduce(index) {
 				let t = this;
-				console.log(index, "-");
-				//				console.log(index, "-", t.list[index].num > 0,t.list[index].num)
 				t.item.num > 0 ? t.item.num-- : 0;
-				//				console.log(t.list[index].num)
 			}
 		}
 	}
