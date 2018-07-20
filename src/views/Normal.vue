@@ -74,10 +74,7 @@
 			},
 			reduce(index) {
 				let t = this;
-				console.log(index, "-");
-				//				console.log(index, "-", t.list[index].num > 0,t.list[index].num)
 				t.list[index].num > 0 ? t.list[index].num-- : 0;
-				//				console.log(t.list[index].num)
 			}
 		}
 	}

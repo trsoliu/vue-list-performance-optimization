@@ -9,7 +9,7 @@
 	<div class="optimize">
 		优化列表
 		<ul>
-			<Operate v-for="(item,index) in list" :item="item" :index="index" :key="index"></Operate>
+			<Operate v-for="(item,index) in listOriginal" :item="item" :index="index" :key="index"></Operate>
 		</ul>
 	</div>
 </template>
@@ -20,22 +20,8 @@
 		name: 'optimize',
 		data() {
 			return {
-				list: list,
-				listOp:list
-			}
-		},
-		methods: {
-			add(index) {
-				let t = this;
-				console.log(index, "+");
-				t.list[index].num++;
-			},
-			reduce(index) {
-				let t = this;
-				console.log(index, "-");
-				//				console.log(index, "-", t.list[index].num > 0,t.list[index].num)
-				t.list[index].num > 0 ? t.list[index].num-- : 0;
-				//				console.log(t.list[index].num)
+				listOriginal: JSON.parse(JSON.stringify(list)),//仅做初次渲染使用
+				listOperate:JSON.parse(JSON.stringify(list))//组件回调后操作，用来做渲染之外的业务处理
 			}
 		},
 		components:{
