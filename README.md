@@ -1,6 +1,5 @@
 # vue-list-performance-optimization
-#掘金文章地址：https://juejin.im/post/5b51846bf265da0f4d0d752b
-> A Vue.js project
+>掘金文章地址：https://juejin.im/post/5b51846bf265da0f4d0d752b
 
 ## Build Setup
 
