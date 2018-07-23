@@ -58,10 +58,12 @@
 			add(index) {
 				let t = this;
 				t.item.num++;
+				//t.$emit(...);//回调操作父组件listOperate，或者处理其他业务均可
 			},
 			reduce(index) {
 				let t = this;
 				t.item.num > 0 ? t.item.num-- : 0;
+				//t.$emit(...);//回调操作父组件listOperate，或者处理其他业务均可
 			}
 		}
 	}

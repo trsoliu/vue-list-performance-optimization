@@ -1,5 +1,5 @@
 # vue-list-performance-optimization
-
+#掘金文章地址：https://juejin.im/post/5b51846bf265da0f4d0d752b
 > A Vue.js project
 
 ## Build Setup
@@ -8,7 +8,10 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080 在config文件夹里的index.js里修改dev => host值为你当前电脑的ip 这样在同一个局域网下可以在你的手机上运行
+# serve with hot reload at localhost:8080 
+#在config文件夹里的index.js里
+#修改dev => host值为你当前电脑的ip 
+#这样在同一个局域网下可以在你的手机上运行
 npm run dev
 
 # build for production with minification
